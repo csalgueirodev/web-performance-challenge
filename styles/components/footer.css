@@ -19,5 +19,4 @@
 
 .footer__link:hover {
   color: var(--color-white);
-  text-decoration: underline;
 }

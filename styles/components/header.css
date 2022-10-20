@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--color-white);
+}
+
 .navigation__link--skipLink {
   border: 1px solid var(--color-green);
   background: var(--color-black);
