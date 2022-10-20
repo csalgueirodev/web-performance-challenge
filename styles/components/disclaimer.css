@@ -1,5 +1,6 @@
 .disclaimer__base {
     background: var(--color-light-gray);
+    color: var(--color-black);
   }
   
 .disclaimer__text {

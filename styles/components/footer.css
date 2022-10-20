@@ -13,5 +13,6 @@
 }
 
 .footer__link {
+  color: var(--color-white);
   margin-right: 20px;
 }
