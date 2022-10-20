@@ -26,6 +26,8 @@ const dynamicContent = () => {
   const teasers = document.querySelectorAll('.teaser__text');
   const marqueeBar = document.querySelector('marquee');
 
+  marqueeBar.innerHTML = CONTENT_BREAKING_NEWS;
+
   // create dynamic content
   teasers.forEach((teaser, index) => {
     teaser.innerHTML = CONTENT_ARTICLE_TEASERS[index];
