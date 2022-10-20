@@ -44,14 +44,14 @@ body {
 
 .main__section {
   margin-bottom: 30px;
-  line-height: 25px;
-  color: #fff;
-  text-align: center;
-  padding: 5px 10px;
 }
 
 .main__marquee {
+  line-height: 25px;
   background-color: #8b0000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
 }
 
 .main__video {
