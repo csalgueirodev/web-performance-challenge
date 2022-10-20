@@ -16,6 +16,7 @@
   font-size: 35px;
   font-weight: bold;
   color: var(--color-white);
+  text-shadow: 1px 1px 3px black;
   max-width: 65%;
   z-index: 1;
 }
