@@ -37,7 +37,7 @@ body {
 .div3 { grid-area: 2 / 2 / 3 / 3; }
 
 .main__teasers {
-  align-items: center;
+  align-items: stretch;
   display: flex;
   justify-content: space-between;
 }
