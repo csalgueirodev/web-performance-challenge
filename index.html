@@ -15,9 +15,7 @@
       adSpace.innerHTML = gif;
     };
     // anti flicker
-    document.body.style.visibility = 'hidden';
     window.addEventListener('load', () => {
-      document.body.removeAttribute('style');
       initAd();
     });
     // antiflicker();
