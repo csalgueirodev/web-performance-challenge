@@ -18,8 +18,14 @@ const lazyLoad = () => {
   });
 };
 
+const initAd = () => {
+  const adSpace = document.querySelector('.main__advertising');
+  adSpace.innerHTML = '<div style="max-width:100%;"><iframe src="https://imgflip.com/embed/6wy03z"></iframe></div>';
+};
+
 const initApp = () => {
   lazyLoad();
+  initAd();
 };
 
 initApp();
