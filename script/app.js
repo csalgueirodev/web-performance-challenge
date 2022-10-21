@@ -1,6 +1,6 @@
 
 const lazyLoad = () => {
-  const images = document.querySelectorAll('img');
+  const images = document.querySelectorAll('img[data-src]');
 
   const lazyImageObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
