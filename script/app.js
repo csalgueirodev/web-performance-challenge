@@ -1,7 +1,3 @@
-const CONTENT_ARTICLE_TEASERS = [
-  "This is an article about first party that happened this weekend",
-  "This is an article about second party that happened this weekend",
-  "This is an article about third party that happened this weekend" ];
 
 const lazyLoad = () => {
   const images = document.querySelectorAll('img');
@@ -12,6 +8,7 @@ const lazyLoad = () => {
       const image = entry.target;
       if (!image.dataset.src) { return; }
       image.src = image.dataset.src;
+      delete image.dataset.src;
       lazyImageObserver.unobserve(image);
     });
   });
@@ -21,18 +18,8 @@ const lazyLoad = () => {
   });
 };
 
-const dynamicContent = () => {
-  const teasers = document.querySelectorAll('.teaser__text');
-  const marqueeBar = document.querySelector('marquee');
-  // create dynamic content
-  teasers.forEach((teaser, index) => {
-    teaser.innerHTML = CONTENT_ARTICLE_TEASERS[index];
-  });
-};
-
 const initApp = () => {
   lazyLoad();
-  dynamicContent();
 };
 
 initApp();

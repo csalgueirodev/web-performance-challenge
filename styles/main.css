@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/alegreya-v29-latin-regular.woff2') format('woff2'), url('./fonts/alegreya-v29-latin-regular.woff') format('woff'), url('./fonts/alegreya-v29-latin-regular.ttf') format('truetype'), url('./fonts/alegreya-v29-latin-regular.svg#Alegreya') format('svg')
+}
+
+@font-face {
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 900;
+  src: local(''), url('./fonts/alegreya-v29-latin-900.woff2') format('woff2'), url('./fonts/alegreya-v29-latin-900.woff') format('woff'), url('./fonts/alegreya-v29-latin-900.ttf') format('truetype'), url('./fonts/alegreya-v29-latin-900.svg#Alegreya') format('svg')
+}
+
 body {
   font-family: 'Alegreya', serif;
 }
@@ -7,6 +21,7 @@ body {
   padding: 30px 100px;
   display: flex;
   justify-content: space-around;
+  visibility: hidden;
 }
 
 .main__content {
@@ -42,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.main__section {
+.main__content section{
   margin-bottom: 30px;
 }
 

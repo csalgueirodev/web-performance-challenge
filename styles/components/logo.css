@@ -1,3 +1,4 @@
 .logo__svg {
   display: block;
+  max-width: 250px;
 }
