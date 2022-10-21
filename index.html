@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://forecast7.com" />
   <link rel="stylesheet" href="./styles/index.min.css" />
   <script src="script/app.js" defer></script>
-  <script defer>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.defer = true;js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
 </head>
 <body>
@@ -54,16 +54,16 @@
     
     <section class="main__hero">
       <a href="https://www.youtube.com/watch?v=hkDQdOgiT1w" class="hero__teaser div1">
-        <img src="./img/bite.webp" alt="How to properly eat a burger">
+        <img src="./img/bite.webp" alt="How to properly eat a burger" height="400px">
         <h1 class="swiper-text hero__teaserText">Local restaurants finally optimising time to first bite</h1>
       </a>
       
       <a href="https://education.nationalgeographic.org/resource/waterfall" class="hero__teaser div2">
-        <img src="./img/waterfalls.webp" alt="Top 10 waterfalls to analyse this week">
+        <img src="./img/waterfalls.webp" alt="Top 10 waterfalls to analyse this week" height="200px">
         <h2 class="hero__teaserText">Top 10 waterfalls to analyse this week</h2>
       </a>
       <a href="https://knowyourmeme.com/memes/stonks" class="hero__teaser div3">
-        <img src="./img/bouncing.webp" alt="Bouncing rates increased signifincantly last week">
+        <img src="./img/bouncing.webp" alt="Bouncing rates increased signifincantly last week" height="200px">
         <h2 class="hero__teaserText">Bouncing rates increased signifincantly last week</h2>
       </a>
     </section>
