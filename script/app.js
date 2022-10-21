@@ -23,9 +23,18 @@ const initAd = () => {
   adSpace.innerHTML = '<div style="max-width:100%;"><iframe src="https://imgflip.com/embed/6wy03z"></iframe></div>';
 };
 
+const initVideo = (e) => {
+  e.preventDefault();
+  const videoContainer = document.querySelector('.video__container');
+  videoContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/072wpvM7aS8?autoplay=1" allow="autoplay" width="425" height="270"></iframe>';
+};
+
 const initApp = () => {
   lazyLoad();
   initAd();
+
+  const video__link = document.querySelector('.video__link');
+  video__link.addEventListener('click', initVideo);
 };
 
 initApp();
